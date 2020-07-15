@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Layout"
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Tx_dialog_title"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:background="#ffd200"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="위치정보"/>
+
+    <TextView
+        android:id="@+id/Tx_dialog_text"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="15dp"
+        android:text="위치정보를 사용하시겠습니까?"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnClose"
+            android:background="#2c1300"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="닫 기"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnGpsStart"
+            android:background="#faa519"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="설 정"
+            android:textStyle="bold"
+            android:textColor="#2c1300"/>
+
+    </LinearLayout>
+
+</LinearLayout>

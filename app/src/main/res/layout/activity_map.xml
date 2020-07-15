@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/map_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorYellow"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingRight="58dp"
+        app:collapseIcon="@null">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/Btn_gps_map"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/gps_on_orange"/>
+
+    <ImageView
+        android:id="@+id/Btn_Category"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/category01_orange"
+        android:layout_alignParentRight="true"/>
+
+    <net.daum.mf.map.api.MapView
+        android:layout_below="@+id/map_toolbar"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <HorizontalScrollView
+        android:visibility="gone"
+        android:id="@+id/Sv_Category"
+        android:layout_below="@+id/map_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp">
+
+        <LinearLayout
+            android:background="#FAA519"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ToggleButton
+                android:id="@+id/tBtn_Food"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_toggle_1"
+                android:textOff="@null"
+                android:textOn="@null"/>
+
+            <ToggleButton
+                android:id="@+id/tBtn_Cafe"
+                android:layout_marginRight="8dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_toggle_2"
+                android:textOff="@null"
+                android:textOn="@null"/>
+
+            <ToggleButton
+                android:id="@+id/tBtn_Fashion"
+                android:layout_marginRight="8dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_toggle_3"
+                android:textOff="@null"
+                android:textOn="@null"/>
+
+            <ToggleButton
+                android:id="@+id/tBtn_Book"
+                android:layout_marginRight="8dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_toggle_4"
+                android:textOff="@null"
+                android:textOn="@null"/>
+
+            <ToggleButton
+                android:id="@+id/tBtn_Beauty"
+                android:layout_marginRight="8dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_toggle_5"
+                android:textOff="@null"
+                android:textOn="@null"/>
+
+            <ToggleButton
+                android:id="@+id/tBtn_Enter"
+                android:layout_marginRight="8dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_toggle_6"
+                android:textOff="@null"
+                android:textOn="@null"/>
+
+            <ToggleButton
+                android:id="@+id/tBtn_Market"
+                android:layout_marginRight="8dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_toggle_7"
+                android:textOff="@null"
+                android:textOn="@null"/>
+
+            <ToggleButton
+                android:id="@+id/tBtn_Life"
+                android:layout_marginRight="8dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_toggle_8"
+                android:textOff="@null"
+                android:textOn="@null"/>
+
+            <ToggleButton
+                android:id="@+id/tBtn_Pharm"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_toggle_9"
+                android:textOff="@null"
+                android:textOn="@null"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ListView
+        android:layout_below="@+id/map_toolbar"
+        android:id="@+id/map_location_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="#FFFFFF">
+
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/Ry_Store_Info"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="#EEEEEE"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/StoreName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/round_all_brown"
+            android:text="상호"
+            android:textSize="12dp"
+            android:textColor="#EEEEEE"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/Ly_Top"
+            android:layout_below="@+id/StoreName"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_top_white">
+
+            <TextView
+                android:id="@+id/ItemName"
+                android:padding="4dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="품목 : "
+                android:textColor="@color/colorBrown"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/StorePhone"
+                android:padding="4dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="연락처 : "
+                android:textColor="@color/colorBrown"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/Ly_Top"
+            android:id="@+id/Ly_Bottom"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_bottom_white">
+
+            <TextView
+                android:id="@+id/StoreAddress"
+                android:padding="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBrown"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:text="주소 : "
+                android:maxLines="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/Ly_Bottom"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_marginRight="4dp"
+                android:id="@+id/Btn_Reviews"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_all_orange"
+                android:text="리뷰"
+                android:textColor="@color/colorBrown"
+                android:textSize="12dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:layout_marginLeft="4dp"
+                android:id="@+id/Btn_Request"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:background="@drawable/round_all_yellow"
+                android:text="신고"
+                android:textColor="@color/colorBrown"
+                android:textSize="12dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

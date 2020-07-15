@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:alpha="0.5"
+            android:src="@drawable/sng_logo"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#faa519">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/advanced_symbal_b"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginTop="56dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1.「성남사랑 상품권」안내"
+                    android:textStyle="bold"
+                    android:textSize="16dp"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1) 성남사랑 상품권 이용 안내"
+                        android:textStyle="bold"
+                        android:textSize="14dp"/>
+                    <TextView
+                        android:padding="8dp"
+                        android:textSize="12dp"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ「성남사랑 상품권」은 어려움을 겪고 있는 전통시장과 영세 상점가를 살리고 「성남사랑 상품권」을 이용하는 시민들에게 상품권 가액 액면금액의 6%(설ㆍ추석ㆍ평상시 동일)를 인센티브로 할인판매하여 성남 지역경제를 활성화 하고자 하는 성남시의 특색사업 이오니 시민 여러분의 많은 애용 바랍니다."/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2) 상품권의 종류"
+                        android:textStyle="bold"
+                        android:textSize="14dp"/>
+                    <TextView
+                        android:padding="8dp"
+                        android:textSize="12dp"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ「성남사랑 상품권」은 5,000원권과 10,000원 2종류가 있습니다."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2.「성남사랑 상품권」구입 및 사용안내"
+                    android:textStyle="bold"
+                    android:textSize="16dp"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1) 상품권 구매방법"
+                        android:textStyle="bold"
+                        android:textSize="14dp"/>
+                    <TextView
+                        android:padding="8dp"
+                        android:textSize="12dp"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ「성남사랑 상품권」은 농협중앙회 성남시지부 28개지점(시·구 농협출장소 및 일반농협)에서 판매합니다.&#10;ㆍ「성남사랑 상품권」을 현금 및 신용카드로 결제하여 구매하실 수 있습니다.&#10;ㆍ상품권 구입시에는 주민등록증, 운전면허증 등 주민등록번호가 나와있는 신분증을 휴대하여야 합니다."/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2) 상품권 구매한도"
+                        android:textStyle="bold"
+                        android:textSize="14dp"/>
+                    <TextView
+                        android:padding="8dp"
+                        android:textSize="12dp"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ개인 : 1일 10만원, 월 50만원.&#10;ㆍ단체 : 월 100만원.&#10;ㆍ한도를 초과하여 구입은 가능하나, 한도초과분에 대해서는 인센티브 없음"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3) 상품권 사용방법"
+                        android:textStyle="bold"
+                        android:textSize="14dp"/>
+                    <TextView
+                        android:padding="8dp"
+                        android:textSize="12dp"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ개인 : 성남사랑 상품권 가맹점 마크「성남사랑 상품권」은 지정된 가맹점에서만 사용 가능합니다.&#10;ㆍ상품권 액면금액의 80% 이상을 구매하실 경우, 나머지 금액을 현금으로 환불받을 수 있습니다.&#10;ㆍ상품권 구매자가 보관상 부주의로 인한 사고(도난,분실,훼손 등)에 대하여는 발행자가 교환이나 보상 등 일체 책임지지 않습니다"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4) 사용가능 시장 및 점포"
+                        android:textStyle="bold"
+                        android:textSize="14dp"/>
+                    <TextView
+                        android:padding="8dp"
+                        android:textSize="12dp"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ수정구 전통시장 : 중앙시장, 현대시장, 중앙지하상가, 신흥시장, 수정로상권활성화구역&#10;ㆍ중원구 전통시장 : 성호시장, 단대전통시장, 하대원시장, 상대원시장, 모란민속5일장, 은행시장, 남한산성시장&#10;ㆍ분당구 전통시장 : 돌고래시장, 코끼리시장, 금호시장 ㆍ소규모소매점(의류, 신발, 잡화, 문방구, 개인형 슈퍼)&#10;ㆍ소규모식품점(곡물,육류,수산물,과실,채소,제과류,기타 식품소매점 등)&#10;ㆍ음식점 / 공영주차장 / 택시 / 시청연금매점 / 시산하구내식당"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="※ 성남사랑상품권 가맹점 확인방법"
+                        android:textStyle="bold"
+                        android:textSize="14dp"/>
+                    <TextView
+                        android:padding="8dp"
+                        android:textSize="12dp"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="성남시 홈페이지 → 분야별정보 → 경제(성남사랑 상품권)"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5) 제외대상(상품권을 취급하거나 사용할 수 없음)"
+                        android:textStyle="bold"
+                        android:textSize="14dp"/>
+                    <TextView
+                        android:padding="8dp"
+                        android:textSize="12dp"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ제외대상(상품권을 취급하거나 사용할 수 없음)&#10;ㆍ백화점 및 대형유통점(이마트,롯데마트,농협하나로,세이브존,홈플러스 외)ㆍ기업형 슈퍼(GS슈퍼마켓,롯데슈퍼,홈플러스 킴스클럽마트 외)ㆍ유흥주점, 뷔페, 예식장"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3.「성남사랑 상품권」사용혜택"
+                    android:textStyle="bold"
+                    android:textSize="16dp"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="56dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1) 성남사랑 상품권 이용 안내"
+                        android:textStyle="bold"
+                        android:textSize="14dp"/>
+                    <TextView
+                        android:padding="8dp"
+                        android:textSize="12dp"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ구매자 : 상품권 액면 금액의 6% 할인(설ㆍ추석 동일)&#10;ㆍ가맹점 : 상품권을 받을 경우 카드수수료 절감"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--  일단 보류
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="56dp"
+        android:padding="8dp"
+        android:background="#2c1300">
+        <Button
+            android:layout_marginRight="4dp"
+            android:background="@drawable/round_all_yellow"
+            android:id="@+id/btnShopList"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textColor="#2c1300"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="판매점 목록 보기"/>
+        <Button
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/round_all_orange"
+            android:id="@+id/btnShopShow"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textColor="#2c1300"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="내 주변 판매점 보기"/>
+    </LinearLayout>
+    -->
+</FrameLayout>

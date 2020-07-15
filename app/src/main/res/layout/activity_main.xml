@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sncity.zealo.sungnamgift.MainActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/root_view">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/m_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorYellow"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingRight="10dp"
+        app:collapseIcon="@null">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/Btn_gps"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/gps_off_orange"/>
+
+    <ScrollView
+        android:layout_below="@+id/m_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/tear_1"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/Btn_Info"
+                    android:layout_marginRight="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="146dp"
+                    android:background="@drawable/selector_btn_info"/>
+
+                <Button
+                    android:id="@+id/Btn_MyLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="146dp"
+                    android:layout_toRightOf="@+id/Btn_Info"
+                    android:layout_marginLeft="17dp"
+                    android:background="@drawable/selector_btn_mylocation"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/tear_1"
+                android:id="@+id/tear_2"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/Btn_Food"
+                    android:layout_marginRight="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="146dp"
+                    android:background="@drawable/selector_btn_food"/>
+
+                <Button
+                    android:id="@+id/Btn_Cafe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="146dp"
+                    android:layout_toRightOf="@+id/Btn_Info"
+                    android:layout_marginLeft="17dp"
+                    android:background="@drawable/selector_btn_cafe"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/tear_2"
+                android:id="@+id/tear_3"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/Btn_Fashion"
+                    android:layout_marginRight="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="146dp"
+                    android:background="@drawable/selector_btn_fashion"/>
+
+                <Button
+                    android:id="@+id/Btn_Book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="146dp"
+                    android:layout_toRightOf="@+id/Btn_Info"
+                    android:layout_marginLeft="17dp"
+                    android:background="@drawable/selector_btn_book"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/tear_3"
+                android:id="@+id/tear_4"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/Btn_Beauty"
+                    android:layout_marginRight="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="146dp"
+                    android:background="@drawable/selector_btn_beauty"/>
+
+                <Button
+                    android:id="@+id/Btn_Enter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="146dp"
+                    android:layout_toRightOf="@+id/Btn_Info"
+                    android:layout_marginLeft="17dp"
+                    android:background="@drawable/selector_btn_enter"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/tear_4"
+                android:id="@+id/tear_5"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/Btn_Market"
+                    android:layout_marginRight="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="146dp"
+                    android:background="@drawable/selector_btn_market"/>
+
+                <Button
+                    android:id="@+id/Btn_Life"
+                    android:layout_width="wrap_content"
+                    android:layout_height="146dp"
+                    android:layout_toRightOf="@+id/Btn_Info"
+                    android:layout_marginLeft="17dp"
+                    android:background="@drawable/selector_btn_life"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/tear_5"
+                android:id="@+id/tear_6"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/Btn_Pharm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="146dp"
+                    android:layout_marginRight="17dp"
+                    android:background="@drawable/selector_btn_pharm"/>
+
+                <Button
+                    android:id="@+id/Btn_My_Reviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="146dp"
+                    android:layout_toRightOf="@+id/Btn_Pharm"
+                    android:layout_marginLeft="17dp"
+                    android:background="@drawable/selector_btn_myreviews"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/m_searchList"
+        android:layout_below="@+id/m_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="#FFFFFF">
+    </ListView>
+</RelativeLayout>
