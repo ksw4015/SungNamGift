@@ -41,12 +41,12 @@
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/colorBlack" />
 
-        <meta-data android:name="com.kakao.sdk.AppKey" android:value="@string/map_api_key"/>
-        <meta-data android:name="io.fabric.ApiKey" android:value="dcdaeae0221bdea38fed37f56be813028ce28f58"/>
+        <meta-data android:name="com.kakao.sdk.AppKey" android:value="API_KEY"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="API_KEY"/>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCgw-TpmfnTSnVxtnVwPqXOFB5xT-iTv_8"/>
+            android:value="API_KEY"/>
 
         <activity
             android:screenOrientation="portrait"
