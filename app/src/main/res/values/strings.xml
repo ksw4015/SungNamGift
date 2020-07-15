@@ -3,7 +3,7 @@
     <string name="GOOGLE_ADVERTISE_ID">My ID</string>
     <string name="No_value">NONE</string>
 
-    <string name="map_api_key"> 35745a0e1c91d4fde89855dfbfbb5076</string>
+    <string name="map_api_key">KAKAO_MAP_API_KEY</string>
 
     <string name="open">open</string>
     <string name="closed">closed</string>
